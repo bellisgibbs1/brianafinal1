@@ -24,10 +24,18 @@ html{
     overflow-y: auto;
 }
 
+.container1{
+    font-family: 'Franklin Gothic Medium';
+    text-align: left;
+    text-align: center;
+
+}
+
 .container{
     position: relative;
     width: 60%;
     display: flex;
+   
 }
 
 .container section{
@@ -37,6 +45,38 @@ html{
   justify-content: flex-end;
   align-items: flex-start;
   overflow-y: auto;
+}
+
+figure,
+img {
+    width:  105%;
+    float: center;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.scroll-bar{
+    
+    border: solid 1px rgb(252, 250, 250);
+    position: absolute;
+    left: 20%;
+    top: 100%;
+    background-color: white;
+    height: 530px;
+    margin-top: -632px;
+    width: 500px;
+    margin-left: -160px;
+    overflow: auto;
+    text-align: left;
+
+}
+
+.caption{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+
 }
 
 .dot{
@@ -54,8 +94,12 @@ html{
 
 .annotate{
     position: relative;
-}
+    color: white; 
+    text-align: center;
+    vertical-align: center;
+    line-height: 80px;       
 
+}
 .red{
     background-color: rgba(228, 31, 67, 0.65);
 }
@@ -65,6 +109,64 @@ html{
     top: 30%;
     left: 60%;
 }
+
+.blue{
+    background-color: rgba(33, 204, 235, 0.65);
+}
+
+#cam:not(.active) {
+    top: 63%;
+    left: 52%
+}
+
+.red{
+    background-color:  rgba(5, 5, 5, 0.65);
+}
+
+#harlem:not(.active) {
+    top: 90%;
+    left: 90%;
+}
+
+.darkorange{
+        background-color:  rgba(255, 128, 78, 0.65);
+    }
+
+#prince:not(.active) {
+        top: 90%;
+        left: 90%;
+    }
+
+.yellow{
+        background-color:  rgba(245, 247, 112, 0.65);
+    }
+
+#reading:not(.active) {
+        top: 90%;
+        left: 90%;
+    }
+
+
+.orange{
+    background-color: rgba(238, 103, 13, 0.65);
+}
+
+#read:not(.active) {
+    top: 90%;
+    left: 90%;
+}
+
+
+.purple{
+    background-color: rgba(232, 170, 248, 0.65);
+}
+
+#hand:not(.active) {
+    top: 90%;
+    left: 90%;
+}
+
+
 
 .dot.active{
     width: 100%;
@@ -82,15 +184,7 @@ html{
     display: block;
 }
 
-.scroll-bar{
-    height: 100%;
-    width: 800px;
-    border:1px soild grey;
-    font-family: sans-serif;
-    overflow: auto;
-    text-align: center;
 
-}
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
