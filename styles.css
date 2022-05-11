@@ -20,31 +20,21 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    text-align: center;
+    text-align: left;
     overflow-y: auto;
 }
 
 
 .container1{
     font-family: 'Franklin Gothic Medium';
-    text-align: left;
+    text-align: center;
 
 }
 
 .container{
-    position: relative;
-    width: 60%;
-    display: flex;
-   
-}
-
-.container section{
- min-width: 60%;
- height: auto;  
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  overflow-y: auto;
+    width: 100%;
+    max-width: 800px;
+   margin: 0 auto;
 }
 
 
@@ -55,6 +45,24 @@ img {
     display: block;
     margin: 0 auto;
 
+}
+
+.horizontal-scroll{
+    max-width: 1200px;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+.horizontal-scroll .inner {
+    width: max-content;
+}
+.horizontal-scroll section {
+    float: left;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-width: 80vw;
 }
 
 
@@ -194,6 +202,10 @@ img {
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+    .horizontal-scroll section {
+        max-width: 22vw;
+    }
 }
 
 
