@@ -199,6 +199,11 @@ img {
 
 }
 
+/*.dot.active > h3{
+    padding: 2em;
+    max-width: auto;
+} */
+
 .dot.active .inner, 
 .dot.active .close {
     display: block;
